@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                //ARRAYS REVERSED
+                Console.WriteLine("ArrayA reversed is:");
+                var arrayA1 = new[] { 0, 2, 4, 6, 8, 10 };
+                var result = new double[arrayA1.Length];
+                for (int i = arrayA1.Length - 1; i >= 0; i--)
+                {
+                    result[arrayA1.Length - i - 1] = arrayA1[i];
+                }
+                foreach (var item in result)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.ReadKey();
+
+                Console.WriteLine("ArrayB reversed is:");
+                var arrayB1 = new[] { 1, 3, 5, 7, 9 };
+                var result1 = new double[arrayA1.Length];
+
+                for (int i = arrayB1.Length - 1; i >= 0; i--)
+                {
+                    result[arrayB1.Length - i - 1] = arrayB1[i];
+                }
+                foreach (var item in result)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.ReadKey();
+
+                Console.WriteLine("ArrayC reversed is:");
+                var arrayC1 = new[] { 3, 1, 4, 1, 5, 9 };
+                var result2 = new double[arrayC1.Length];
+
+                for (int i = arrayC1.Length - 1; i >= 0; i--)
+                {
+                    result[arrayC1.Length - i - 1] = arrayC1[i];
+                }
+                foreach (var item in result)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.ReadKey();
+                var arrayC2 = new[] { 2, 6, 5, 3, 5, 9 };
+                var result3 = new double[arrayC1.Length];
+
+                for (int i = arrayC1.Length - 1; i >= 0; i--)
+                {
+                    result[arrayC1.Length - i - 1] = arrayC1[i];
+                }
+                foreach (var item in result)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.ReadKey();
+            }
+            Console.WriteLine("_______________________________________");
+            }
+        }
+    }
+}
